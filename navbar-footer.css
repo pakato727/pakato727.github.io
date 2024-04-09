@@ -1,0 +1,208 @@
+/*SEZIONE NAV */
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background-color:whitesmoke;
+    color:black;
+    height:80px;
+    padding:0 85px;
+    z-index:99;
+    
+}
+
+.navbar .logo-container,
+.footer .logo-container{
+    display:flex;
+    align-items:center;
+    gap:3px;
+    font-size:1rem;
+    
+}
+/* .navbar .logo-container i{
+    width:40px;
+    height:40px;
+} */
+/* .navbar .logo-container h5{
+    font-size:20px;
+} */
+   
+
+
+.navbar ul{
+    display:none;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:black;
+    position:relative;
+    transition: color .4s ;
+}
+.navbar ul li a:hover{
+    color:purple;
+}
+.navbar ul li a:after{
+    content:"";
+    width:100%;
+    height:2px;
+    color:transparent;
+    background-color:transparent;
+    position:absolute;
+    bottom:-20px;
+    left:0;
+}
+.navbar ul li a:hover:after{
+    content:"";
+    width:100%;
+    height:2px;
+    color:purple;
+    background-color:purple;
+    transform:translateY(-15px);
+    transition:.5s;
+}
+
+
+.navbar .btn{
+    background-color:lightgrey;
+    border-radius:8px;
+    color:black;
+    padding:10px 15px;
+    transition:all .5s ease-out ;
+    text-decoration:none;
+    
+}
+
+.navbar .btn:hover{
+    background-color: rgba(94, 59, 238, 1);
+    color:whitesmoke;
+}
+ .navbar .btn:active, .navbar .btn:focus {
+    background-color: rgba(94, 59, 238, 1);
+    outline:2px solid black;
+    outline-offset:3px;
+    color:whitesmoke;
+    transition:.1s;
+
+} 
+
+.navbar .btn-container .btn#contactMeBtn{
+    display:none;
+    cursor:pointer;
+    
+    
+}
+
+.btn-container .btn#menuBtn{
+    cursor:pointer;
+    font-size:1.3rem;
+}
+
+
+
+
+  .navbar.active {
+    display:flex;
+    align-items:start;
+    padding-top:30px;
+    background:#;
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    
+  }
+  .navbar.active~.main{
+    margin-top:0;
+  }
+  .navbar.active .btn#menuBtn, 
+  .navbar.active .logo-container {
+    height:55px;
+    display:flex;
+    align-items:center;
+    animation:animationBtnLogo ease 1s;
+    
+  }
+  .navbar.active .links-nav-container ul{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    position:absolute;
+    
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    
+    animation:animationUl ease 1.5s ;
+    
+  }
+  .navbar.active .links-nav-container ul li{
+    list-style:none;
+    text-align:center;
+    
+    
+  }
+  @keyframes animationUl{
+    0%{
+        top:0%;
+        
+        
+    }
+    100%{
+        top:50%;
+        
+    }
+  }
+  @keyframes animationBtnLogo{
+    from{
+        margin-top:-200px;
+    }
+    to{
+        margin-top:0px;
+    }
+  }
+
+/*SEZIONE FOOTER*/
+.footer{
+    background-color:#484030;
+    color:white;
+    padding:50px 85px;
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.footer .top, 
+.footer .bottom{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+    font-size:17px;
+}
+
+.footer ul li{
+    list-style:none;
+}
+
+.footer hr{
+    margin:50px 0;
+}
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+.footer a:hover{
+    color:#beedee;
+    text-decoration:underline;
+}
+
+
+.footer .bottom .links{
+    display:flex;
+    gap:20px;
+}

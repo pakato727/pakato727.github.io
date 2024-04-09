@@ -1,0 +1,412 @@
+
+
+/*SEZIONE MEDIA QUERY */
+
+@media screen and (min-width:470px) and (max-width:700px) {
+
+    .main .presentation{
+        height:90vh;
+    }
+    .resume .skills-content{
+        
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        
+        
+    }
+
+    .resume .skills-content  .skill{
+        width:90%;
+        max-width:300px;
+        padding:40px 20px;
+    }
+
+    .resume .softwares .softwares-content{
+        display:grid;
+        grid-template-columns:1fr 1fr ;
+    }
+    
+}
+@media screen and (min-width:700px) {
+    
+    /*SEZIONE NAV */
+    .btn-container .btn#menuBtn{
+        display:none;
+    }
+    
+    
+    .navbar ul,
+    .footer .top ul{
+        display:flex;
+        gap:20px;
+        list-style:none;
+        font-size:.7rem;
+    }
+
+    /*SEZIONE HEADER*/
+
+    /*SEZIONE MAIN*/
+        /* main presentazione*/
+        .main .presentation{
+            
+            flex-direction:row;
+            align-items:center;
+            height:90vh;
+            justify-content:space-between;
+            
+            
+        }
+        
+        .presentation .left{
+            
+            align-items:start;
+            text-align:start;
+            order:0;
+            font-size:1.3rem;
+        }
+    
+        .presentation .left .contact-btn{
+            
+            max-width:250px;
+            
+            text-align:center;
+            
+            
+            
+            
+            
+        }
+        
+        .presentation .right img{
+            width:400px;
+            height:400px;
+            
+            
+            
+        }
+
+        /* main skills*/
+
+        
+        /*main portfolio*/
+        
+
+        /*main resume*/
+        .resume .softwares .softwares-content{
+            
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            
+           
+        }
+
+
+        .resume .experience{
+           
+            display:flex;
+            gap:20px;
+            
+        }
+
+        .resume .experience .certification-container{
+            
+            width:50%;
+            
+            
+        }
+    
+        .resume .experience .jobs-container{
+            width:50%;
+            
+        }
+
+   
+    
+    /*main getintouch*/
+    .getintouch{
+        padding:50px 85px;
+    }
+    .getintouch .getintouch-container {
+        width: 100%;
+        max-width:100%;
+        
+        
+        display:flex;
+        gap:20px;
+
+    }
+    
+    .getintouch .company-info {
+        width:50%;
+        
+        margin-bottom: 0px;
+        
+    }
+    .getintouch .company-info ul{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        
+    }
+
+    
+    
+
+    
+    
+    
+    .getintouch form{
+        width:50%;
+    }
+    .getintouch .input-group {
+        
+        
+        margin-bottom: 0px;
+    }
+
+
+/*SEZIONE FOOTER*/
+    .footer .top, 
+    .footer .bottom{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+   
+    
+}
+
+@media screen and (min-width:700px) and (max-width:1100px){
+    /*SEZIONE NAV */
+    .navbar .logo-container{
+        flex:1;
+    }
+    .navbar ul{
+        flex:2;
+        
+        
+    }
+
+    /*SEZIONE HEADER*/
+
+    /*SEZIONE MAIN*/
+    /* main skills*/
+    .resume .skills-content{
+
+        grid-template-columns:1fr 1fr 1fr ;
+    }
+    
+    .resume .skills-content  .skill{
+        width:90%;
+        max-width:300px;
+        padding:40px 20px;
+    }
+
+
+    /*main profile*/
+    
+    .profile .aboutme-card .card-body{
+        
+        width:600px;
+
+        box-shadow:0 0 5px gray;
+        
+     } 
+
+    
+
+    /*main portfolio*/
+    .main .portfolio{
+        
+        padding:50px 85px;
+        
+    }
+
+    .portfolio .portfolio-items{
+
+        grid-template-columns:1fr 1fr;
+        
+        
+
+    }
+
+
+   
+    
+    /*SEZIONE FOOTER*/
+    
+}
+
+@media screen and (min-width:1100px){
+    /*SEZIONE NAV */
+    
+    .navbar .btn-container .btn#contactMeBtn{
+        display:block;
+    }
+
+    .resume .skills-content{
+
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+        margin:0 85px;
+        
+    }
+
+    .resume .skills-content  .skill{
+        width:100%;
+        min-height:200px;
+        padding:20px 20px;
+        
+        
+    }
+
+    .resume .skills-content  .skill .knowledge-bar{
+        position:absolute;
+        bottom:20px;
+        width:80%;
+    }
+
+    
+
+    .resume .softwares .softwares-content{
+            
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+        margin:0 85px;
+       
+    }
+
+    .resume .softwares-content .software-box {
+        width:100%;
+        
+    }
+
+    /*main resume .experience*/
+    .resume .experience{
+        margin:0 85px;
+    }
+
+
+    /*SEZIONE HEADER*/
+
+    /*SEZIONE MAIN*/
+    /*main profile*/
+    .profile{
+        
+border-radius:30px 30px 0px 0px;
+    }
+
+    
+    .profile .profile-content {
+        
+        padding-top:200px;
+        
+        
+        flex-direction:row;
+        align-items:start;
+        gap:20px;
+        
+    }
+
+    .profile .aboutme-card{
+        width:30%;
+    }
+    
+    .profile .aboutme-card .card-head img{
+        
+        box-shadow:0 0 5px lightgray;
+
+        
+        top:-180px;
+        
+        
+    }
+
+    .profile .aboutme-card .card-body{
+       
+       padding-top:100px;
+       /* width:350px; */
+       width:100%;
+    } 
+
+    .profile .profile-content .aboutme-text{
+        
+        margin-top:-180px;
+        /* height:766px; */
+        
+    }
+
+    .profile .profile-content .aboutme-text .aboutme-wrap{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+        
+    }
+    .aboutme-wrap .languages {
+        flex:1;
+    }
+    .aboutme-wrap .driving-license {
+        flex:1;
+    }
+    .aboutme-wrap .authorization {
+        
+        
+    }
+
+
+    /*main portfolio*/
+    .main .portfolio{
+        
+        padding:50px 85px;
+        
+    }
+
+    .resume{
+        
+        border-radius:0px 0px 30px 30px;
+    }
+
+    
+
+    
+
+    /* .portfolio .header{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:60px;
+
+    } */
+
+    .portfolio .portfolio-items{
+        
+        grid-template-columns:1fr 1fr 1fr;
+        
+        
+    }
+
+   
+
+
+ 
+    
+    .getintouch .company-info ul li{
+        
+        font-size:1rem;
+    }
+    .getintouch .company-info ul li strong{
+        
+        font-size:1.1rem;
+    }
+
+    
+    
+    
+    
+
+    
+
+    
+    
+    /*SEZIONE FOOTER*/
+}
