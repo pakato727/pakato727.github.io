@@ -33,7 +33,7 @@ if(isset($_POST["send"])){
     "
     <script>
     alert('Sent successfully');
-    document.location.href = 'index.html';
+    document.location.href = '/index/index.html';
     </script>
     ";
 }
